@@ -1,0 +1,36 @@
+{
+  "classification": {
+    "model": "RandomForestClassifier",
+    "random_state": 42,
+    "test_rows": 21919,
+    "accuracy": 0.7165472877412291,
+    "precision": 0.5523029966703663,
+    "recall": 0.5714080665996842,
+    "f1": 0.5616931216931217,
+    "roc_auc": 0.7670949987186402,
+    "confusion_matrix_labels": [
+      "show",
+      "no_show"
+    ],
+    "confusion_matrix": [
+      [
+        11725,
+        3227
+      ],
+      [
+        2986,
+        3981
+      ]
+    ]
+  },
+  "demand_forecasting": {
+    "model": "HistGradientBoostingRegressor",
+    "random_state": 42,
+    "split": "chronological 80/20",
+    "test_days": 94,
+    "mape_percent_nonzero_days": 5008.8191529803125,
+    "mae_appointments_per_day": 210.55246917665477,
+    "rmse_appointments_per_day": 283.08680998455344,
+    "r2": -0.003264176990100065
+  }
+}
